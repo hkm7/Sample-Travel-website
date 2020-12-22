@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The Nomads | Categories</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="author" content="Hrishikesh Mohan">
+        <meta name="description" content="">
+        <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+        <!--Bootstrap 4 CSS-->
+        <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css">
+        
+    </head>
+    <body id="mainview">
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-light sticky-top font-weight-bold">
+            <div class="container">
+                <a class="navbar-brand" href="{{url_for('home')}}">The Nomads Club</a> 
+                
+                <div class="navbar navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url_for('home')}}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url_for('custom')}}">Customized Package</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url_for('contact')}}">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>   
+        </nav>
+
+        <br><br>
+
+        <form>
+        <div class="container tour-card-container">
+            <div class="row justify-content-center tour-card-deck">
+                <div class="col-sm-5 tour-card  tour-optionals">
+                        <div class="form-group">
+                            <label for="InputEmail">Preferred Country</label>
+                            <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter country">
+                        </div>
+                        <div class="form-group">
+                            <label for="InputEmail">State</label>
+                            <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter state">
+                        </div>
+                        <div class="form-group">
+                            <label for="InputEmail">Areas</label>
+                            <input type="text" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter areas of interest">
+                            <small id="emailHelp" class="form-text text-muted">Enter all the areas you are looking to travel separated by commas</small>
+                        </div> 
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="Check1">
+                            <label class="form-check-label" for="exampleCheck1">Local Guide</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="Check2">
+                            <label class="form-check-label" for="exampleCheck1">Honeymoon Package</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="Check3">
+                            <label class="form-check-label" for="exampleCheck1">Music (Band/DJ)</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="Check4">
+                            <label class="form-check-label" for="exampleCheck1">Adventure Sports</label>
+                        </div>                  
+                </div>
+
+                <div class="col-sm-5 tour-card  tour-optionals">
+                        <br>
+                        <div class="form-group">
+                            <label for="InputEmail">Unlisted Extras</label>
+                            <input type="text" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter anything else you want that is not listed">
+                        </div>
+                        <div class="card-title">CONTACT INFORMATION</div>
+                        <div class="form-group">
+                            <label for="InputEmail">Email address</label>
+                            <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We won't share your email with anyone else. We will contact you with the details once we review your submission</small>
+                        </div>
+                </div>
+            </div>
+            <div class="row justify-content-center"><button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+    </div>
+    </form>
+
+    </body>
+</html>

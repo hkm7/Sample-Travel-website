@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The Nomads | Categories</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="author" content="Hrishikesh Mohan">
+        <meta name="description" content="">
+        <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+        <!--Bootstrap 4 CSS-->
+        <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css">
+        
+    </head>
+    <body id="paris-body">
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-light sticky-top font-weight-bold">
+            <div class="container">
+                <a class="navbar-brand" href="{{url_for('home')}}">The Nomads Club</a> 
+                
+                <div class="navbar navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url_for('home')}}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url_for('custom')}}">Customized Package</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url_for('contact')}}">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>   
+        </nav>
+
+        <br><br>
+
+        <div class="container tour-card-container">
+            <div class="row justify-content-center tour-card-deck">
+                <div class="col-sm-5 tour-card">
+                    <div class="card bg-light">
+                        <div class="card-body">
+                            <h5 class="card-title">PARIS</h5>
+                            <div class="card-subtitle">Preset tour package</div>
+                            <p class="card-text">
+                                <ul>
+                                    <li>3 Nights 4 Days</li>
+                                    <li>Food and Accomodation included</li>
+                                    <li>Optional: Local Guide</li>
+                                    <li>39,999 INR</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-5 tour-card  tour-optionals">
+                    <form>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="Check2">
+                            <label class="form-check-label" for="exampleCheck1">Local Guide</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="Check2">
+                            <label class="form-check-label" for="exampleCheck1">Honeymoon Package</label>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="InputEmail">Email address</label>
+                            <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We won't share your email with anyone else.</small>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+    </body>
+</html>

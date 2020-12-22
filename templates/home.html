@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The Nomads | Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="author" content="Hrishikesh Mohan">
+        <meta name="description" content="">
+        <link rel = "icon" href ="../static/images/tnc.png" type = "image/x-icon">
+        <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+        <!--Bootstrap 4 CSS-->
+        <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css">
+        
+    </head>
+    <body id="mainview">
+        <!--navigation bar from bootstrap 4 instead of using header-->
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-light sticky-top font-weight-bold">
+            <div class="container">
+                <a class="navbar-brand" href="{{url_for('home')}}">The Nomads Club</a> 
+                
+                <div class="navbar navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url_for('home')}}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url_for('custom')}}">Customized Package</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url_for('contact')}}">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>   
+        </nav>
+        
+        <div class="container">
+            <div class="container">
+                <div class="row h-100 align-items-center justify-content-center text-center">
+                    <div class="row align-self-end">
+                        <h1 class="text-uppercase">The one stop to travel anywhere in the world</h1>
+                        <hr class="divider">
+                    </div>
+
+                    <div class="row align-self-baseline">
+                        <h3 class="text-white-75 font-weight-light nb-5">Personalised travel packages made exclusively for you</h3>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="container">
+            <div class="card-deck">
+                <a class="card mb-4 listed" href="{{url_for('paris')}}">
+                    <img class="card-img-top img-fluid" src="../static/images/paris.jpg" alt="Eiffel Tower">
+                    <div class="card-body">
+                        <h4 class="card-title">The Eiffel Tower</h4>
+                        <p class="card-text">The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower.</p>
+                    </div>
+                </a>
+                <a class="card mb-4 listed" href="{{url_for('agra')}}">
+                    <img class="card-img-top img-fluid" src="../static/images/agra.jpg" alt="Taj Mahal">
+                    <div class="card-body">
+                        <h4 class="card-title">The Taj Mahal</h4>
+                        <p class="card-text">The Taj Mahal is an ivory-white marble mausoleum on the southern bank of the river Yamuna in the Indian city of Agra. It was commissioned in 1632 by the Mughal emperor Shah Jahan to house the tomb of his favourite wife, Mumtaz Mahal; it also houses the tomb of Shah Jahan himself.</p>
+                    </div>
+                </a>
+                <a class="card mb-4 listed" href="{{url_for('sydney')}}">
+                    <img href="#" class="card-img-top img-fluid" src="../static/images/opera.jpg" alt="Sydney Opera House">
+                    <div class="card-body">
+                        <h4 class="card-title">The Sydney Opera House</h4>
+                        <p class="card-text">The Sydney Opera House is a multi-venue performing arts centre at Sydney Harbour located in Sydney, New South Wales, Australia. It is one of the 20th century's most famous and distinctive buildings.</p>
+                    </div>
+                </a>
+                
+            </div>
+        </div>
+
+    </body>
+</html>
